@@ -67,6 +67,7 @@ iAmTheMan("435-215-9248");
 /*
   Write a function that accepts another function as it's only argument and returns a new function
   (which invokes the original function that was passed in) that can only ever be executed once.
+
   Once completed, add a second argument that allows the function to be invoked N number of times.
   After the function has been called N number of times, console.log('STAHHP');
 */
@@ -78,6 +79,18 @@ var mac = function(fn){
 };
 
 
+
+
+
+
+
+
+
+var mac = function(fn, fn2){
+  return function(){
+    fn();
+  };
+};
 
 
 
